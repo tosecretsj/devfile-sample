@@ -40,7 +40,7 @@ app.get('/metrics', async (req, res, next) => {
   res.set('Content-Type', Prometheus.register.contentType)
   res.end(metrics);
 })
-
+   
 // Time routes after here.
 app.use(requestTimer);
 
